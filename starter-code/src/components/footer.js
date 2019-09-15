@@ -11,7 +11,7 @@ function ListItem(props) {
 
 function Footer(props) {
   return (
-    <ul>
+    <ul className="description-list">
       <ListItem info={props.info[0]} />
       <ListItem info={props.info[1]} />
       <ListItem info={props.info[2]} />

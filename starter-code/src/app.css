@@ -1,12 +1,161 @@
-.list {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.description-list {
+  margin: 10%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
-.list li {
+.description-list li {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .main {
+  background-color: #1f2535;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 10%;
+}
+
+.navbar {
+  background-color: #1f2535;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  padding-top: 1%;
+}
+
+.left-container {
+  color: white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 5%;
+  padding-left: 10%;
+}
+
+.description {
+  width: 50%;
+}
+
+.awesome-btn {
+  width: 10%;
+}
+
+.title {
+  font-size: 5rem;
+}
+
+.react-logo-container-one {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.react-logo-container-two {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+#logo-one {
+  align-self: center;
+}
+
+#logo-two {
+  align-self: flex-end;
+}
+
+#logo-three {
+  align-self: flex-start;
+}
+
+.small-title {
+  font-size: 1.5rem;
+}
+
+.ironhackLogo {
+  padding-left: 2%;
+}
+
+.menuLogo {
+  padding-right: 2%;
+}
+
+.awesome-btn {
+  width: auto;
+  margin-top: 10%;
+  font-size: 1.5rem;
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #ffffff),
+    color-stop(1, #f6f6f6)
+  );
+  background: -moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background: -webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background: -o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background: -ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+  background-color: #ffffff;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: Arial;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+.awesome-btn :hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #f6f6f6),
+    color-stop(1, #ffffff)
+  );
+  background: -moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background: -o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background: -ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+  background-color: #f6f6f6;
+}
+.awesome-btn :active {
+  position: relative;
+  top: 1px;
+}
+
+.small-description {
+  width: 70%;
+}
+
+.list-item > * {
+  padding-bottom: 5%;
 }
